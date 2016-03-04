@@ -168,6 +168,7 @@ jQuery(function ($) {
 
 			if ($el.data('abort')) {
 				$el.data('abort', false);
+				this.render();
 			} else {
 				// Todo Create an action for this, and handle it in the Store to change the state.
 				Actions.update(this.idFromEvent(e), val);
